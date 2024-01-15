@@ -344,7 +344,7 @@ nav .nav-img{
     width: 40%;
     border-radius: 16px;
     border: 1px solid #FF5400;
-    padding: 27px 40px;
+    padding: 45px 40px;
 }
 .box-input-section h2{
     color: #131318;
@@ -398,10 +398,12 @@ nav .nav-img{
 .news-letter-img{
     width: 100%;
     height: 100%;
+    
 }
 .news-letter-img img{
     width: 100%;
     height: 100%;
+    padding: 10px;
 }
 .img-section-newsletter .saveup{
     border: 0;
@@ -485,16 +487,19 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    gap: 18px;
+}
+.footer-img h1{
     color: #131318;
     font-size: 32px;
     font-weight: 800;
-    gap: 18px;
 }
 .footer-content {
     text-align: center;
 }
 .footer-content p{
-    width: 60%;
+    width: 50%;
     margin: 16px auto 34px auto; 
 }
 .footer-icons{
@@ -504,9 +509,11 @@ footer{
     gap: 20px;
     font-size: 24px;
 }
-.hr-line{
+.footer-hr-line{
     margin: 40px auto;
-    width: 65%;
+    width: 45%;
+    height: 1px;
+    background-color: red;
 }
 .copy-right{
     color: #131318;
