@@ -48,20 +48,24 @@ nav .nav-img{
     text-decoration: none;
     color:#424247;
     font-size: 18px;
-    font-weight: 400;  
+    font-weight: 400;               
 }
 .nav-links a:active{
     color: red; 
 }
 .bar{
     display: none;
+    stroke-width: 1.5px;
+    stroke: #131318;
+    font-size: 18px;
+    text-align: right;
 }
 
 /* Header Banner Section  */
 
 .header-banner{
     border-radius: 16px;
-    background-image:linear-gradient(to bottom, rgba(5, 8, 18, 0.923), rgba(241, 236, 236, 0.019)), url('images/Group\ 13\ \(1\)\ \(1\).png');
+    background-image:linear-gradient(to bottom, rgba(21, 28, 54, 0.923), rgba(128, 110, 110, 0.019)), url('images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -149,9 +153,7 @@ nav .nav-img{
 
 }
 .tours-content{
-    width: 50%; 
-
-    
+    width: 50%;   
 }
 .tours-content h1{
     color: #131318;
@@ -266,6 +268,7 @@ nav .nav-img{
     position: absolute;
     top: 45%;
     left: 40%;
+    
     
     color: white;
 }
@@ -454,6 +457,7 @@ nav .nav-img{
     background-color: #7b7b8e;
     padding: 50px;
     margin-top: 100px;
+    border-radius: 10px;
 }
 .our-contact h1{
     color: white;
@@ -536,4 +540,201 @@ footer{
     font-family: Inter;
     font-size: 16px;
     font-weight: 300;
+}
+
+
+@media screen and (max-width:600px) {
+    
+    /* nav section  */
+
+    header{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    nav{
+        margin: 20px 0;
+    }
+    .nav-links a{
+        display: none;
+    }
+    .bar{
+        display:block;
+    }
+    .nav-img img{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-img h1{
+        font-size: 26px;
+    }
+
+    /* header banner section  */
+    .header-banner h1{
+        font-size: 24px;
+    }
+    .header-banner p{
+        width: 70%;
+    }
+    .header-banner{
+        padding: 40px 30px;
+    }
+    .banner-input {
+        flex-direction: column;
+        width: 100%;  
+    }
+
+    /* Popular Tours section  */
+    .tours-section{
+        flex-direction: column;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-top: 25px;
+    }
+    .tours-content{
+        width: 100%;   
+    }
+    .tours-content h1{
+        font-size: 24px; 
+    }
+    .tours-img{
+        width: 100%;
+    }
+
+    /* Choose Your Destination section  */
+
+    .destination{
+        margin-top: 25px;
+    }
+    .destination-content{
+        width: 80%; 
+    }
+    .img-box {
+        height: 250px; 
+        padding: 0 30px;
+    }
+    .destination-content h1{
+        font-size: 20px;
+    }
+    .destination-content p{
+        margin-bottom: 18px;
+    }
+    .destination-img{
+        grid-template-columns: 1fr;     
+    }
+    .img-1{
+        grid-column: 1/span 1; 
+        
+    }
+    .img-2{
+        grid-column: 1/span 1; 
+        
+    }
+    .img-3{
+        grid-column: 1/span 1; 
+    } 
+    .img-4{
+        grid-column: 1/span 1; 
+    } 
+    .img-5{
+        grid-column: 1/span 1; 
+    } 
+    .img-6{
+        grid-column: 1/span 1; 
+    } 
+    .img-7{
+        grid-column: 1/span 1; 
+    }
+    
+
+    /* Why Choose Use Section  */
+
+    .choos-us-section{
+        margin-top: 25px;
+    }
+    .card h2{
+        font-size:20px;
+    }
+    .choose-us-card{
+        flex-direction: column;
+        padding: 30px;     
+    }
+    .card{
+        text-align: left; 
+         
+    }
+
+    /* News letter Section  */
+
+    .newsletter-section{
+        flex-direction: column;
+        margin-top: 25px;
+        padding:0 30px ;
+    }
+    .box-input-section{
+        width: 100%;
+    }
+    .img-section-newsletter{
+        width: 100%;
+        position: relative;
+        text-align: right;
+    }
+    .news-letter-img img{
+        padding: 0px;
+    }
+    .img-section-newsletter .saveup{
+        font-size: 15.854px; 
+        bottom: 40px;
+        right: 4px;
+        width: 200px;
+        height: 80px;
+        transform: rotate(-25deg);
+    }
+    .saveup p{
+        font-size: 15.854px; 
+    }
+    .saveup h2{
+        font-size: 21.138px; 
+    }
+
+    /* Our contact section  */
+
+    .our-contact{
+        flex-direction: column;
+        margin: 30px;
+    }
+    .our-contact h1 ,a{
+        text-align: center;
+    }
+    .our-contact p{
+        text-align: center;
+    }
+    .our-contact h1{
+        font-size: 24px;
+        text-align: center;
+    }
+    .our-contact h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .ticket-link a{
+        font-size: 20px;
+    }
+    
+    /* Footer section  */
+    footer{
+        margin-top: 25px;
+    }
+    .footer-content p{
+        width: 80%;
+        margin: 16px auto 34px auto; 
+    }
+    .footer-hr-line{
+        width: 85%;;
+    }
+
+
+
+
+
+
 }
